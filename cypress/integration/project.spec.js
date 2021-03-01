@@ -545,7 +545,7 @@ describe('13 - Adicione dois botões, um com id="mover-cima" e outro com id="mov
   });
 });
 
-describe('"14 - Adicione um botão com id="remover-selecionado" que, quando clicado, remove o item selecionado', () => {
+describe('14 - Adicione um botão com id="remover-selecionado" que, quando clicado, remove o item selecionado', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
