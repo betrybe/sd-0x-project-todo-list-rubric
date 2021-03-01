@@ -1,9 +1,8 @@
 {
   "root": true,
   "extends": "trybe-fundamentals",
-  "env": {
-    "browser": true,
-    "node": true,
-    "jest": true
+  "plugins": ["sonarjs"],
+  "rules": {
+      "sonarjs/no-duplicate-string": ["error", 7] // remover depois
   }
 }

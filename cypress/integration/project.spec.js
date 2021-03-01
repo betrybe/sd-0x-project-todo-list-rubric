@@ -32,7 +32,7 @@ const checkTodoList = (todos = []) => {
 };
 
 
-describe('1 - Sua lista deve possuir o título "Minha Lista de Tarefas" em uma tag <header>', () => {
+describe('1 - Adicone a sua lista o título "Minha Lista de Tarefas" em uma tag <header>', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
@@ -43,7 +43,7 @@ describe('1 - Sua lista deve possuir o título "Minha Lista de Tarefas" em uma t
   });
 });
 
-describe('2 - Abaixo do título deve haver um pequeno e discreto parágrafo com id="funcionamento" e com o texto "Clique duas vezes em um item para marcá-lo como completo"', () => {
+describe('2 - Adicione abaixo do título um pequeno e discreto parágrafo com id="funcionamento" e com o texto "Clique duas vezes em um item para marcá-lo como completo"', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
@@ -54,7 +54,7 @@ describe('2 - Abaixo do título deve haver um pequeno e discreto parágrafo com 
   });
 });
 
-describe('3 - Deve haver um input com o id="texto-tarefa" onde o usuário poderá digitar o nome do item que deseja adicionar à lista', () => {
+describe('3 - Adicione um input com o id="texto-tarefa" onde o usuário poderá digitar o nome do item que deseja adicionar à lista', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
@@ -65,7 +65,7 @@ describe('3 - Deve haver um input com o id="texto-tarefa" onde o usuário poder�
   });
 });
 
-describe('4 - Deve haver uma lista ordenada de tarefas com o id="lista-tarefas"', () => {
+describe('4 - Adicione uma lista ordenada de tarefas com o id="lista-tarefas"', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
@@ -76,7 +76,7 @@ describe('4 - Deve haver uma lista ordenada de tarefas com o id="lista-tarefas"'
   });
 });
 
-describe('5 - Deve haver um botão com id="criar-tarefa" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo', () => {
+describe('5 - Adicione um botão com id="criar-tarefa" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
@@ -113,7 +113,7 @@ describe('5 - Deve haver um botão com id="criar-tarefa" e, ao clicar nesse bot�
   });
 });
 
-describe('6 - Os itens da lista de tarefas devem ser ordenados por ordem de criação', () => {
+describe('6 - Ordene os itens da lista de tarefas eles devem ser ordenados por ordem de criação', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
@@ -141,7 +141,7 @@ describe('6 - Os itens da lista de tarefas devem ser ordenados por ordem de cria
   });
 });
 
-describe('7 - Ao clicar em um item da lista, altere a cor de fundo do item para cinza rgb(128,128,128)', () => {
+describe('7 - Clicar em um item da lista deve alterar a cor de fundo do item para cinza rgb(128,128,128)', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
@@ -227,7 +227,7 @@ describe('8 - Não deve ser possível selecionar mais de um elemento da lista ao
   });
 });
 
-describe('9 - Ao clicar duas vezes em um item, ele deverá ser riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item', () => {
+describe('9 - Clicar duas vezes em um item, ele deverá ser riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
@@ -307,7 +307,7 @@ describe('9 - Ao clicar duas vezes em um item, ele deverá ser riscado, indicand
   });
 });
 
-describe('10 - Deve haver um botão com `id="apaga-tudo"`que quando clicado deve apagar todos os itens da lista', () => {
+describe('10 - Adicione um botão com id="apaga-tudo" que quando clicado deve apagar todos os itens da lista', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
@@ -333,7 +333,7 @@ describe('10 - Deve haver um botão com `id="apaga-tudo"`que quando clicado deve
   });
 });
 
-describe('11 - Deve haver um botão`id="remover-finalizados"`que quando clicado remove **somente** os elementos finalizados da sua lista', () => {
+describe('11 - Adicione um botão id="remover-finalizados" que quando clicado remove **somente** os elementos finalizados da sua lista', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
@@ -365,7 +365,7 @@ describe('11 - Deve haver um botão`id="remover-finalizados"`que quando clicado 
   });
 });
 
-describe('12 - Adicione um botão com `id="salvar-tarefas"` que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava', () => {
+describe('12 - Adicione um botão com id="salvar-tarefas" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
@@ -409,7 +409,7 @@ describe('12 - Adicione um botão com `id="salvar-tarefas"` que salve o conteúd
   });
 });
 
-describe('13 - Adicione dois botões, um com `id="mover-cima"` e outro com `id="mover-baixo"`, que permitam mover o item selecionado para cima ou para baixo na lista de tarefas', () => {
+describe('13 - Adicione dois botões, um com id="mover-cima" e outro com id="mover-baixo", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');
@@ -545,7 +545,7 @@ describe('13 - Adicione dois botões, um com `id="mover-cima"` e outro com `id="
   });
 });
 
-describe('14 - Adicione um botão com `id="remover-selecionado"` que, quando clicado, remove o item selecionado', () => {
+describe('"14 - Adicione um botão com id="remover-selecionado" que, quando clicado, remove o item selecionado', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');

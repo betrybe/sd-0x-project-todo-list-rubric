@@ -30,6 +30,7 @@ jobs:
   evaluator_job:
     runs-on: ubuntu-18.04
     name: Evaluator job
+    needs: [eslint, stylelint]
     steps:
       - uses: actions/checkout@v2
       - name: Cypress evaluator step
@@ -37,7 +38,7 @@ jobs:
         uses: betrybe/cypress-evaluator-action@v5
         with:
           repository-test-name: 'betrybe/sd-0x-project-todo-list-tests'
-          repository-test-branch: 'master'
+          repository-test-branch: 'ajustes_projeto'
       - name: Store evaluation step
         uses: betrybe/store-evaluation-action@v2
         with:
