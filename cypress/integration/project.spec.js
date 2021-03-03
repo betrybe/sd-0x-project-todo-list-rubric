@@ -32,7 +32,7 @@ const checkTodoList = (todos = []) => {
 };
 
 
-describe('1 - Adicone a sua lista o título "Minha Lista de Tarefas" em uma tag <header>', () => {
+describe('1 - Adicone à sua lista o título "Minha Lista de Tarefas" em uma tag <header>', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');

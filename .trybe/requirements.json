@@ -1,7 +1,7 @@
 {
   "requirements": [
     {
-      "description": "1 - Adicone a sua lista o título \"Minha Lista de Tarefas\" em uma tag <header>",
+      "description": "1 - Adicone à sua lista o título \"Minha Lista de Tarefas\" em uma tag <header>",
       "bonus": false
     },
     {
