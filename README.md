@@ -62,6 +62,8 @@ Todas as funções já estão declaradas no arquivo `challenges.js`. Você pode 
 
 ## O que deverá ser desenvolvido
 
+- Será desenvolvido uma lista de tarefas usando `HTML`, `CSS` e `Javascript`.
+
 ---
 
 ## Data de Entrega
