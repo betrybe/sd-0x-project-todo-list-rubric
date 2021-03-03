@@ -33,7 +33,7 @@
       "bonus": false
     },
     {
-      "description": "9 - Clicar duas vezes em um item, ele deverá ser riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item",
+      "description": "9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item",
       "bonus": false
     },
     {

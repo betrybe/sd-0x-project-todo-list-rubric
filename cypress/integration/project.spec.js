@@ -227,7 +227,7 @@ describe('8 - Não deve ser possível selecionar mais de um elemento da lista ao
   });
 });
 
-describe('9 - Clicar duas vezes em um item, ele deverá ser riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item', () => {
+describe('9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item', () => {
   beforeEach(() => {
     cy.viewport(1366, 768);
     cy.visit('./index.html');

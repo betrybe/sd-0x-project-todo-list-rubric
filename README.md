@@ -34,7 +34,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     - [6 - Ordene os itens da lista de tarefas eles devem ser ordenados por ordem de criação](#6---ordene-os-itens-da-lista-de-tarefas-eles-devem-ser-ordenados-por-ordem-de-criação)
     - [7 - Clicar em um item da lista deve alterar a cor de fundo do item para cinza rgb(128,128,128)](#7---clicar-em-um-item-da-lista-deve-alterar-a-cor-de-fundo-do-item-para-cinza-rgb128128128)
     - [8 - Não deve ser possível selecionar mais de um elemento da lista ao mesmo tempo](#8---não-deve-ser-possível-selecionar-mais-de-um-elemento-da-lista-ao-mesmo-tempo)
-    - [9 - Clicar duas vezes em um item, ele deverá ser riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item](#9---clicar-duas-vezes-em-um-item-ele-deverá-ser-riscado-indicando-que-foi-completo-deve-ser-possível-desfazer-essa-ação-clicando-novamente-duas-vezes-no-item)
+    - [9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item](#9---clicar-duas-vezes-em-um-item-ele-deverá-ser-riscado-indicando-que-foi-completo-deve-ser-possível-desfazer-essa-ação-clicando-novamente-duas-vezes-no-item)
     - [10 - Adicione um botão com id="apaga-tudo" que quando clicado deve apagar todos os itens da lista](#10---adicione-um-botão-com-idapaga-tudo-que-quando-clicado-deve-apagar-todos-os-itens-da-lista)
     - [11 - Adicione um botão id="remover-finalizados" que quando clicado remove **somente** os elementos finalizados da sua lista](#11---adicione-um-botão-idremover-finalizados-que-quando-clicado-remove-somente-os-elementos-finalizados-da-sua-lista)
 
@@ -57,18 +57,6 @@ Este _Pull Request_ deverá conter o arquivo `challenges.js` com suas funções 
 Todas as funções já estão declaradas no arquivo `challenges.js`. Você pode criar outras funções para auxiliarem as já existentes. Contudo **Não altere o nome das funções que já existem**.
 
 **Os parâmetros das funções já existentes podem e devem ser alterados.**
-
-## Prazo para entrega
-
-O Prazo para entrega é de **7 dias corridos** após o último dia de projeto.
-
-**Exemplo:** Se o último dia de projeto aconteceu na **quarta-feira, dia 17 de junho**, seu prazo final de entrega será na **quarta-feira 24 de junho** às **14 horas**.
-
-Vale ressaltar que os projetos podem ter mais de um dia de duração, por isso o prazo de **7 dias** é contado à partir do último dia de projeto.
-
-## ⚠️ É importante que seus arquivos não tenham o nome alterado! ⚠️
-
-Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://course.betrybe.com/intro/git/) sempre que precisar!
 
 ---
 
@@ -265,7 +253,7 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 - Será verificado que, quando um elemento da lista é selecionado, o elemento selecionado previamente deixa de sê-lo. Isso é verificado através da presença ou não do estilo `background-color: rgb(128, 128, 128)` no elemento.
 
-### 9 - Clicar duas vezes em um item, ele deverá ser riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item
+### 9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item
 
     Pontos importantes sobre este requisito:
 
