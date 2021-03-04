@@ -21,7 +21,7 @@
       "bonus": false
     },
     {
-      "description": "6 - Ordene os itens da lista de tarefas eles devem ser ordenados por ordem de criação",
+      "description": "6 - Ordene os itens da lista de tarefas por ordem de criação",
       "bonus": false
     },
     {
@@ -41,7 +41,7 @@
       "bonus": false
     },
     {
-      "description": "11 - Adicione um botão id=\"remover-finalizados\" que quando clicado remove **somente** os elementos finalizados da sua lista",
+      "description": "11 - Adicione um botão com id=\"remover-finalizados\" que quando clicado remove **somente** os elementos finalizados da sua lista",
       "bonus": false
     },
     {
