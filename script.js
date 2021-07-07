@@ -1,6 +1,6 @@
 const text = document.querySelector('#texto-tarefa');
 const button = document.querySelector('#criar-tarefa');
-const orderedList = document.querySelector('#lista-tarefas');
+const taskList = document.querySelector('#lista-tarefas');
 const list = document.createElement('li');
 list.className = 'todo-list';
 const buttonsSection = document.querySelector('#buttons');
@@ -22,7 +22,7 @@ buttonsSection.appendChild(removeSelected);
 const saveTasks = document.createElement('button');
 saveTasks.id = 'salvar-tarefas';
 saveTasks.className = 'button save';
-saveTasks.innerHTML = 'Save Selected';
+saveTasks.innerHTML = 'Save All Tasks';
 buttonsSection.appendChild(saveTasks);
 const moveUp = document.createElement('button');
 moveUp.id = 'mover-cima';
@@ -41,17 +41,17 @@ function addTask() {
     if (text.value === '') {
       alert('[ERRO!] - Valor inválido!');
     } else {
-      const lists = document.createElement('li');
-      lists.className = 'todo-list';
-      orderedList.appendChild(lists);
-      lists.innerText = text.value;
+      const newTask = document.createElement('li');
+      newTask.className = 'todo-list';
+      taskList.appendChild(newTask);
+      newTask.innerText = text.value;
       text.value = '';
     }
   });
 }
 
 function selectedDesativate() {
-  orderedList.addEventListener('click', (event) => {
+  taskList.addEventListener('click', (event) => {
     const selectedLi = document.querySelectorAll('.selected');
     for (let index = 0; index < selectedLi.length; index += 1) {
       selectedLi[index].classList.remove('selected');
@@ -62,7 +62,7 @@ function selectedDesativate() {
 
 // Scratch the double-click tasks
 function todoCompleted() {
-  orderedList.addEventListener('dblclick', (event) => {
+  taskList.addEventListener('dblclick', (event) => {
     if (event.target.classList.contains('completed')) {
       event.target.classList.remove('completed');
     } else {
@@ -116,7 +116,7 @@ function saveAllTasks() {
 function removeSelectedTasks() {
   removeSelected.addEventListener('click', () => {
     const selectList = document.querySelector('.selected');
-    orderedList.removeChild(selectList);
+    taskList.removeChild(selectList);
   });
 }
 
@@ -164,7 +164,7 @@ function loadPage() {
     if (myTodo.classes[index] === true) {
       savedList.classList += ' completed';
     }
-    orderedList.appendChild(savedList);
+    taskList.appendChild(savedList);
   }
 }
 
